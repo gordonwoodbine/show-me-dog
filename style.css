@@ -64,6 +64,8 @@ main {
   max-height: 100%;
   max-width: 90vw;
   display: none;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
 .dog-loading {
@@ -81,6 +83,16 @@ main {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-btn:hover {
+  background-color: rgb(255, 29, 74);
+  transform: scale(1.1);
+}
+
+.new-btn:active {
+  transform: scale(1);
 }
 
 .show {
