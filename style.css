@@ -15,7 +15,7 @@ button {
 header {
   background-color: #222;
   color: #fff;
-  padding: 2rem 0;
+  padding: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -41,6 +41,7 @@ h1 {
 main {
   display: flex;
   justify-content: center;
+  padding: 0 2rem;
 }
 
 .main-wrapper {
@@ -53,8 +54,23 @@ main {
   margin: 2rem 0;
 }
 
+.img-wrapper {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
 .dog-image {
-  max-height: 600px;
+  max-height: 100%;
+  max-width: 90vw;
+  display: none;
+}
+
+.dog-loading {
+  font-size: 4rem;
+  text-align: center;
+  animation: spin 1s linear infinite;
+  display: none;
 }
 
 .new-btn {
@@ -64,4 +80,47 @@ main {
   background-color: crimson;
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+/* Media Queries */
+
+@media (max-width: 660px) {
+  .img-wrapper {
+    height: 400px;
+  }
+
+  #breeds {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #breeds {
+    font-size: 1.2rem;
+  }
+
+  .img-wrapper {
+    height: 300px;
+  }
+}
+
+/* Animations */
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
 }

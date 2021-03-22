@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="./img/dog_fav.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Monda&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css">
   <title>Show Me Dog</title>
 </head>
@@ -18,13 +19,17 @@
       </div>
       <select name="breeds" id="breeds">
         <option disabled selected>Select Breed</option>
+        <option value="random">random doggo</option>
       </select>
     </div>
   </header>
 
   <main>
     <div class="main-wrapper">
-      <img class="dog-image" src="./img/placeholder-dog.jpg" alt="a lovely dog">
+      <div class="img-wrapper">
+        <img class="dog-image show" src="./img/placeholder-dog.jpg" alt="a lovely dog">
+        <div class="dog-loading"><i class="fas fa-bone"></i></div>
+      </div>
       <button class="new-btn">Get New Dog</button>
     </div>
   </main>
