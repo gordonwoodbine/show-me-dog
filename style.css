@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Monda', sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-family: 'Amatic SC';
+  font-size: 4rem;
+}
+
+#breeds {
+  font-family: inherit;
+  font-size: 1.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-wrapper > * {
+  margin: 2rem 0;
+}
+
+.dog-image {
+  max-height: 600px;
+}
+
+.new-btn {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.5rem;
+  border-color: transparent;
+  background-color: crimson;
+  color: #fff;
+  border-radius: 5px;
+}
