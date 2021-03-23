@@ -8,6 +8,9 @@
 
 body {
   font-family: 'Monda', sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 button {
@@ -48,6 +51,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 0 2rem;
+  flex: 1;
 }
 
 .main-wrapper {
@@ -107,6 +111,19 @@ main {
   display: block;
 }
 
+/* Footer Section */
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer a {
+  color: crimson;
+}
+
 /* Media Queries */
 
 @media (max-width: 660px) {
@@ -134,6 +151,10 @@ main {
 
   .img-wrapper {
     height: 300px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
   }
 }
 
