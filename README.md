@@ -8,5 +8,5 @@ Currently live at https://gordonwoodbine.github.io/show-me-dog/
 
 Still to do:
 
-- [ ] Add footer to page
+- [x] Add footer to page
 - [ ] Test browser compatability
